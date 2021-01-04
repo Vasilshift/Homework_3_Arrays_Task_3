@@ -10,11 +10,12 @@ int main() {
 
 	const int n = 5;
 
-	int array[n];
+	int array[n] = {1, -2, 3, -1, 4};
 	int i, k = 0;
-	
-	// Enter array
+	//cout << array[i];
 
+	// Enter array
+	/*
 	for (i = 0; i < n; i++) {
 
 		//array[i] = rand() % n;
@@ -22,7 +23,7 @@ int main() {
 		cin >> array[i];
 		//cout << array[i] << " ";
 	}
-
+	*/
 	// ----------- Sum of negative elements ----------------------------
 
 	for (i = 0; i < n; i++) {
@@ -47,14 +48,13 @@ int main() {
 	
 	for (i = 0; i < n; i++) {
 
-		if (array[i] > max) {
-
-			max = array[i];
-		}
-
 		if (array[i] < min) {
 
 			min = array[i];
+		}
+		if (array[i] > max) {
+
+			max = array[i];
 		}
 
 	}
@@ -115,22 +115,24 @@ int main() {
 	cout << "First negative element in array = " << q1 << endl;
 	
 	i = 0;
+	int n2;
 
 	for (i = 0; i < n; i++) {
 
 		if (array[i] < 0) {
 
 			q2 = array[i]; // last negative element
+			n2 = i; //  r - position of last negative element
 		}
 
 	}
 
-	int n2 = i; //  r - position of last negative element
+	
 	int sum = 0;
 
 	cout << "Last negative element in array = " << q2 << endl;
 	
-	for (i = n1; i < n2; i++) {
+	for (i = n1; i <= n2; i++) {
 
 		sum = sum + array[i];
 	}
