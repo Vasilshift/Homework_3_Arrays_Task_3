@@ -116,12 +116,11 @@ int main() {
 		if (array[i] < 0) {
 
 			q2 = array[i]; // last negative element
-			n2 = i; //  r - position of last negative element
+			n2 = i; //  position of last negative element
 		}
 
 	}
-
-	
+		
 	int sum = 0;
 
 	cout << "Last negative element in array = " << q2 << endl;
