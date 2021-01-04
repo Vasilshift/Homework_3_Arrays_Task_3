@@ -24,6 +24,7 @@ int main() {
 		//cout << array[i] << " ";
 	}
 	*/
+
 	// ----------- Sum of negative elements ----------------------------
 
 	for (i = 0; i < n; i++) {
@@ -35,9 +36,6 @@ int main() {
 	
 	cout << endl;
 	cout << "Sum of negative elements = " << k << endl;
-
-	// ------------ End of sum of negative elements ---------------------------
-
 
 	//----------- Calculate multiplication of elements from MIN to MAX------------------
 
@@ -75,8 +73,6 @@ int main() {
 	
 	cout << endl;
 	cout << "Multiplication of elements from MIN to MAX = " << mult << endl;
-
-	//-------------- End multiplication of negative elements ------------------
 	
 	//----------- Multiplication of elements with even numbers ----------------
 
@@ -94,8 +90,6 @@ int main() {
 	}
 
 	cout << "Multiplication of elements with even numbers = " << g << endl;
-
-	//----------- END multiplication of elements with even numbers ----------------
 
 	//---------- Sum elements between first and last negative element -------------
 
@@ -138,12 +132,6 @@ int main() {
 	}
 
 	cout << "Sum elements between first and last negative element: " << sum << endl;
-
-
-
-
-
-	//---------- END Sum elements between first and last negative element -------------
 
 	system("pause");
 	return 0;
