@@ -1,29 +1,19 @@
 #include <iostream>
-#include <ctime>
-#include <random>
-#include <time.h>
+#include <array>
 using namespace std;
 
 int main() {
-
-	srand(time(NULL));
 
 	const int n = 5;
 
 	int array[n] = {1, -2, 3, -1, 4};
 	int i, k = 0;
-	//cout << array[i];
 
-	// Enter array
-	/*
+	cout << "Array: ";
 	for (i = 0; i < n; i++) {
-
-		//array[i] = rand() % n;
-
-		cin >> array[i];
-		//cout << array[i] << " ";
+		 cout << array[i] << " ";
 	}
-	*/
+
 
 	// ----------- Sum of negative elements ----------------------------
 
@@ -57,7 +47,6 @@ int main() {
 
 	}
 		
-	cout << " " << endl;
 	cout << "max= " << max << endl;
 	cout << "min= " << min << endl;
 
@@ -71,7 +60,7 @@ int main() {
 
 	}
 	
-	cout << endl;
+
 	cout << "Multiplication of elements from MIN to MAX = " << mult << endl;
 	
 	//----------- Multiplication of elements with even numbers ----------------
@@ -130,7 +119,7 @@ int main() {
 		sum = sum + array[i];
 	}
 
-	cout << "Sum elements between first and last negative element: " << sum << endl;
+	cout << "Sum elements between first and last negative element: " << sum << endl << endl;
 
 	system("pause");
 	return 0;
